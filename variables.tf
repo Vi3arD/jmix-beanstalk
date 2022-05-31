@@ -153,15 +153,10 @@ variable "elasticsearch" {
   default = []
 }
 
-############################################################
-# Create cert for specified domain case in AWS
-############################################################
-variable "hosted_zone" {
+variable "aws_key" {
   type    = string
-  default = "mydomain.org"
 }
 
-variable "san" {
-  type    = set(string)
-  default = ["*.mydomain.org"]
+variable "aws_key_secret" {
+  type    = string
 }
