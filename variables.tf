@@ -54,7 +54,7 @@ variable "spot_price" {
 
 variable "image" {
   type    = string
-  default = "demo-project-1:0.0.1-SNAPSHOT"
+  default = "jmixdemo.docker.test-cloudcontrol.ru/user1/sanbox:latest"
 }
 
 variable "ports" {
